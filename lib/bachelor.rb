@@ -43,7 +43,8 @@ end
 def get_average_age_for_season(data, season)
    data.each do |season, names|
      names.each do | ages|
-       newarr = [ages["age"].map 
+       newarr = [ages["age"].map { |x| }
+       
        
        
 end
